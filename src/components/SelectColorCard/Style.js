@@ -5,6 +5,13 @@ export const Text = styled.p`
   margin: 1px;
 `;
 
+export const CardColor = styled.div`
+  background-color: ${(props) => props.title};
+  width: 100%;
+  height: 80%;
+  color: transparent;
+`;
+
 export const SelectColorCardButton = styled.div`
   background-color: 'white'
   color: ${(props) => (props.chosen ? "white" : "black")};
