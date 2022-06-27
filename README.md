@@ -24,11 +24,11 @@ Adicionar aqui os screenshots com os passos da aplicação
 
 #### Instruções para rodar o projeto a primeira vez localmente
 
+```Verificar se a versão do node na sua máquina se encontra na versão v16.15.1 para conseguir instalar as dependências.```
+
 ```npm install```
 
 ```npm start```
-
-```verificar a versão do node pra rodar o projeto```
 
 
 Após realizar esses passos, o site estará rodando na porta 3000.
