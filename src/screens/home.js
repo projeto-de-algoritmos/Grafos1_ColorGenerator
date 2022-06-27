@@ -3,7 +3,7 @@ import ColorCard from "../components/ColorCard/index";
 import SelectColorCard from "../components/SelectColorCard/index";
 import mixColors from "../scripts/index";
 import Header from "./header";
-import { FlexDiv } from "./Style";
+import { Button, FlexDiv } from "./Style";
 
 const colors = [
   ["Vermelho", "rgb(226, 1, 1)"],
@@ -44,12 +44,7 @@ const HomeScreen = () => {
     }
   };
 
-  useEffect(() => {
-    console.log(selectedColors);
-  }, [selectedColors, mixState]);
-
   const mixes = (selectedColors) => {
-    console.log(selectedColors);
     setMixs(mixColors(selectedColors));
     setMixState(true);
   };
@@ -65,36 +60,18 @@ const HomeScreen = () => {
         <Header />
       </div>
       {mixState ? (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <FlexDiv>
           <h3>A cor gerada foi:</h3>
-        </div>
+        </FlexDiv>
       ) : (
         <div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+          <FlexDiv>
             <h3>Selecione duas cores e verifique o resultado</h3>
-          </div>
+          </FlexDiv>
         </div>
       )}
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <FlexDiv>
         {mixState
           ? showResultOfMixColors(mixs)
           : colors.map((type, i) => (
@@ -106,47 +83,28 @@ const HomeScreen = () => {
                 removeItem={removeColor}
               />
             ))}
-      </div>
+      </FlexDiv>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <FlexDiv>
         {mixState ? (
-          <div
+          <Button
             onClick={() => {
               setMixState(false);
               setSelectedColors([]);
             }}
-            style={{
-              border: "1px solid black",
-              margin: "50px",
-              padding: "10px",
-              cursor: "pointer",
-            }}
           >
             Voltar
-          </div>
+          </Button>
         ) : (
-          <div
+          <Button
             onClick={() => {
               selectedColors.length > 2 ? notMix() : mixes(selectedColors);
             }}
-            style={{
-              border: "1px solid black",
-              margin: "50px",
-              padding: "10px",
-              cursor: "pointer",
-            }}
           >
-            {/* liberar o botão de confirmar apenas quando a quantidade de ingredientes selecionados for 2 */}
             Confirmar
-          </div>
+          </Button>
         )}
-      </div>
+      </FlexDiv>
     </div>
   );
 };
