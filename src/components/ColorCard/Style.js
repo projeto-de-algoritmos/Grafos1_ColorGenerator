@@ -5,6 +5,20 @@ export const Text = styled.p`
   margin: 20px;
 `;
 
+export const ColorResult = styled.div`
+  background-color: ${(props) => props.title.color};
+  width: 100%;
+  height: 80%;
+  color: transparent;
+`;
+
+export const ColorCheck = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const SelectColorCardButton = styled.div`
   background-color: 'white'
   color: ${(props) => (props.chosen ? "white" : "black")};
