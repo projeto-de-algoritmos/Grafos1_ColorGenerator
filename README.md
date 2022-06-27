@@ -14,7 +14,7 @@ Descrever sobre o ColorGenerator e a estrutura do algoritmo do grafo pra gerar a
 
 ## Screenshots
 
-Adicionar aqui os screenchoots com os passos da aplicação
+Adicionar aqui os screenshots com os passos da aplicação
 
 ## Instalação 
 **Linguagem**: JavaScript<br>
