@@ -34,6 +34,11 @@ export const resultColors = [
     "rgb(6, 30, 250)"
   ],
   [
+    "Azul arroxeado",
+    ["Azul", "Roxo"],
+    "rgb(95, 104, 171)"
+  ],
+  [
     "Marrom", 
     ["Vermelho", "Verde",], 
     "rgb(181, 89, 74)"
@@ -57,5 +62,10 @@ export const resultColors = [
     "Laranja escuro", 
     ["Laranja", "Vermelho"], 
     "rgb(199, 99, 2)",
+  ],
+  [
+    "Ardósia Laranja", 
+    ["Verde", "Roxo"], 
+    "rgb(208, 81, 32)",
   ],
 ];
