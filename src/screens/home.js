@@ -3,12 +3,15 @@ import ColorCard from "../components/ColorCard/index";
 import SelectColorCard from "../components/SelectColorCard/index";
 import mixColors from "../scripts/index";
 import Header from "./header";
-import { Button, FlexDiv } from "./Style";
+import { Button, FlexDiv, ColorsDiv } from "./Style";
 
 const colors = [
   ["Vermelho", "rgb(226, 1, 1)"],
   ["Amarelo", "rgb(242, 250, 6)"],
   ["Azul", "rgb(6, 30, 250)"],
+  ["Laranja", "rgb(255, 165, 0)"],
+  ["Verde", "rgb(0,128,0)"],
+  ["Roxo", "rgb(153, 51, 153)"],
 ];
 
 const HomeScreen = () => {
@@ -75,7 +78,6 @@ const HomeScreen = () => {
         {mixState
           ? showResultOfMixColors(mixs)
           : colors.map((type, i) => (
-              // permitir o componente aceitar selecionar 2 cores
               <SelectColorCard
                 key={i}
                 title={type}
