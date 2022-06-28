@@ -4,13 +4,14 @@ export const HeaderDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2%;
+  margin-bottom: 6%;
 `;
 
 export const FlexDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const Button = styled.div`

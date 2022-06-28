@@ -38,12 +38,6 @@ const HomeScreen = () => {
       return mixs.map((type) => (
         <ColorCard key={Math.random()} title={type} node />
       ));
-    } else {
-      return (
-        <FlexDiv>
-          Não foi encontrado em nossos registros alguma cor resultante.
-        </FlexDiv>
-      );
     }
   };
 
@@ -58,7 +52,7 @@ const HomeScreen = () => {
   };
 
   return (
-    <div style={{ backgroundColor: "#E8ECF3", height: "100vh" }}>
+    <div style={{ backgroundColor: "#E8ECF3" }}>
       <div>
         <Header />
       </div>
@@ -100,7 +94,7 @@ const HomeScreen = () => {
         ) : (
           <Button
             onClick={() => {
-              selectedColors.length > 2 ? notMix() : mixes(selectedColors);
+              selectedColors.length !== 2 ? notMix() : mixes(selectedColors);
             }}
           >
             Confirmar
