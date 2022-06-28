@@ -21,8 +21,6 @@ O projeto tem como objetivo criar cores resultantes a partir de cores de origem.
 ![Screen3](./screenshots/screen3.png)
 ![Screen4](./screenshots/screen4.png)
 ![Screen5](./screenshots/screen5.png)
-![Screen6](./screenshots/screen6.png)
-![Screen7](./screenshots/screen7.png)
 
 ## Instalação
 
