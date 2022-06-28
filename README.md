@@ -1,6 +1,6 @@
 # ColorGenerator
 
-**Número da Lista**: 1<br>
+**Número da Lista**: X<br>
 **Conteúdo da Disciplina**: Grafos1<br>
 
 ## Alunos
