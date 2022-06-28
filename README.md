@@ -12,7 +12,7 @@
 
 ## Sobre
 
-Descrever sobre o ColorGenerator e a estrutura do algoritmo do grafo pra gerar a cor
+O projeto tem como objetivo criar cores resultantes a partir de cores de origem. Para essa solução, foi implementado através do algoritmo de grafos estudado na disciplina. Basicamente, abstraímos como sendo um grafo bipartido com um lado sendo as cores de origem e do outro lado as cores resultantes.
 
 ## Screenshots
 
@@ -51,4 +51,4 @@ Após realizar esses passos, o site estará rodando na porta 3000.
 
 ## Apresentação
 
-Adicionar detalhes da apresentação aqui
+Link da apresentação:
