@@ -51,4 +51,4 @@ Após realizar esses passos, o site estará rodando na porta 3000.
 
 Link da apresentação:
 
-https://github.com/projeto-de-algoritmos/Grafos1_ColorGenerator/blob/main/screenshots/apresentação.mp4
+https://github.com/projeto-de-algoritmos/Grafos1_ColorGenerator/blob/main/screenshots/apresentação.mp4?raw=true
